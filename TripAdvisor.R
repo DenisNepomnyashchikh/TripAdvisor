@@ -84,7 +84,7 @@ summary(t.data)
 # Implement linear regression and package Mice to impute missing values.
 
 ###########################################
-# Impute missing values # Dmitry Toveskin #
+# Impute missing values 
 ###########################################
 
 # Regression
@@ -162,7 +162,7 @@ abr.name <- abbreviate(name, minlength = 2)
 row.names(cl.data) <- abr.name
 
 ###############################################
-#Simple Exploratory analysis# Stephan Freitag #
+#Simple Exploratory analysis
 ###############################################
 
 #Create geographical maps
@@ -296,7 +296,7 @@ sapply(colnames(cl.data), function(x){
 #dev.off()
 
 ###############################################
-# Box-cox transformation # Aleksandr Sitnikov #
+# Box-cox transformation 
 ###############################################
 
 # Shift counts ratings data to 0.0001 to get positive values
@@ -349,7 +349,7 @@ data.frame(pval.obs, dec.obs, pval.tr, dec.tr)
 # hypothesis about non-normality (p-value bigger than an alpha)
 
 ###########################################
-# Detecting Outliers # Aleksandr Sitnikov #
+# Detecting Outliers 
 ###########################################
 
 scale.data <- as.data.frame(apply(cl.data, 2, scale))
@@ -420,7 +420,7 @@ abr.name <- abr.name[-c(1, 15)]
 
 
 ########################################################
-# Principal Component Analysis # Denis Nepomnyashchikh #
+# Principal Component Analysis
 ########################################################
 
 # Use new dataset without outliers and transformed to normality
@@ -489,10 +489,10 @@ scatterplot3d(data.pca$scores[,1:3], pch = 19, type = 'h', angle = 55)
 #dev.off()
 
 ############################################
-# Cluster Analysis # Denis Nepomnyashchikh #
+# Cluster Analysis 
 ############################################
 
-#Hierarchical clustering # Stephan Freitag
+#Hierarchical clustering 
 methods = c("average", "single", "complete")
 #png("hiercluster.png", width=1100, height=600)
 opar = par(mfrow = c(1, 3))
@@ -568,7 +568,7 @@ scatterplot3d(data.pca$scores[,1:3], pch = 19, type = 'h', angle = 55, color = c
 #dev.off()
 
 ############################
-# Scenario # Maria Ryabeva #
+# Scenario 
 ############################
 # We recommend to choose any hotels from second cluster. 
 # Now we try to explore features from each hotel in that 
